@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mulish&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:wght@600;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --myfont : 'Mulish' ,sans-serif;
+    --my-btn-font : 'Montserrat' ,sans-serif;
+    --lg-lightcolor:linear-gradient(to left,rgba(116,235,213,0.6),rgba(159,172,230,0.6));
+    --lg-color:linear-gradient(to left,#74ebd5,#9face6); 
+}
+body{
+    background-image: var(--lg-lightcolor),url('./images/online-registration-sign-up-with-man-sitting-near-smartphone_268404-95.webp');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-family: var(--myfont);
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+}
+.container{
+    background-color: transparent;
+    border-radius: 10px;
+    margin: 50px;
+    -webkit-border-radius:10px;
+    box-shadow: 8px 8px 23px -2px rgba(18,13,230,0.61);
+    -webkit-box-shadow: 8px 8px 23px -2px rgba(18,13,230,0.61);
+    -moz-box-shadow: 8px 8px 23px -2px rgba(18,13,230,0.61);
+    overflow: hidden;
+    width: 700px;
+    max-width: 100%;
+    
+}
+.header{
+    background: var(--lg-color);
+    padding: 30px 0;
+}
+.header h2{
+    color: #222;
+    font-family: var(--my-btn-font);
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.form{
+    padding: 60px;
+}
+
+.form-control{
+    margin-bottom: 20px;
+    position: relative;
+}
+.form-control label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.form-control input{
+    width: 100%;
+    border: 2px solid #f0f0f0;
+    border-radius: 5px;
+    font-family: var(--myfont);
+    font-size: 14px;
+    padding: 12px;
+    background-color: transparent;
+}
+.form-control input:focus{
+    outline: 0;
+    border-color: #777;
+}
+.form-control.success input{
+    border-color: #2ecc71;
+}
+.form-control.error input{
+    border-color: #e74c3c;
+}
+.form-control i{
+    position: absolute;
+    right: 12px;
+    top: 38px;
+    visibility: hidden;
+}
+.form-control.success i.fa-check-circle{
+    color: #2ecc71;
+    visibility: visible;
+}
+.form-control.error i.fa-exclamation-circle{
+    color: #e74c3c;
+    visibility: visible;
+}
+.form-control small{
+    color: #e74c3c;
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    visibility: hidden;
+}
+.form-control.error small{
+    visibility: visible;
+}
+
+.form .btn{
+    
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    color: rgb(23, 18, 18);
+    display: block;
+    font-family: var(--my-btn-font);
+    font-size: 16px;
+    padding: 15px 0;
+    margin-top: 20px;
+    width: 100%;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 2s ease;
+}
+
+@media(max-width:998px){
+    .container{
+        width: calc(100vw-35vw);
+        max-width: 100%;
+    }
+}
